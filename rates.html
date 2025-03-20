@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/assets/shape4colors-small.webp" />
+    <title>Meraki Allied Health</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><img src="/assets/logo/logo-main.webp" alt="Meraki Allied Health Logo" width="212px" height="112px" class="home-li" /></a>
+      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+        <img src="/assets/icons/bars-solid.svg" alt="Open menu" height="40px" width="40px" />
+      </button>
+
+      <nav id="navbar">
+        <ul>
+          <li>
+            <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+              <img src="/assets/icons/xmark-solid.svg" alt="Close menu" height="40px" width="40px" />
+            </button>
+          </li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/team.html">Team</a></li>
+          <li><a href="/faqs.html">FAQs</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/refer.html" class="nav-button">Refer now</a></li>
+        </ul>
+      </nav>
+      <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    </header>
+
+    <main class="main-rates">
+      <section class="hero-rates">
+        <div class="hero-rates-wrapper">
+          <img src="/assets/bf-pink-hollow.png" alt="" width="184px" height="184px" />
+          <h1>Rates</h1>
+          <img src="/assets/bf-green-hollow.png" alt="" width="184px" height="184px" />
+        </div>
+      </section>
+
+      <!-- NDIS table -->
+      <div class="table-title">
+        <h3>NDIS <span>(as per NDIS Price guide)</span></h3>
+      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Rate Per Hour</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Positive Behaviour Support</td>
+              <td>$244.22</td>
+            </tr>
+            <tr>
+              <td>Psychological Capacity Building <span>(Provisional Psychologist)</span></td>
+              <td>$156.16</td>
+            </tr>
+            <tr>
+              <td>Psychological Capacity Building <span>(Registered Psychologist)</span></td>
+              <td>$244.22</td>
+            </tr>
+            <tr>
+              <td>Travel <span>(Up To Max. Of 30 Minutes)</span></td>
+              <td>Same As Service Provided</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Private Fees table -->
+      <div class="table-title">
+        <h3>Private Fees</h3>
+      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Rate Per Hour</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Provisional Psychologist</td>
+              <td>$120-$150 <span>(Please Enquire)</span></td>
+            </tr>
+            <tr>
+              <td>Registered Psychologist</td>
+              <td>$200-$220 <span>(Please Enquire)</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Assessment Fees -->
+      <div class="table-title">
+        <h3>Assessment Fees</h3>
+      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Rate Per Hour</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Autism Assessment</td>
+              <td>$2300</td>
+            </tr>
+            <tr>
+              <td>ADHD Assessment</td>
+              <td>$1600</td>
+            </tr>
+            <tr>
+              <td>Cognitive Assessment</td>
+              <td>$1100</td>
+            </tr>
+            <tr>
+              <td>Autism + ADHD Combo</td>
+              <td>$2850</td>
+            </tr>
+            <tr>
+              <td>Autism + Cognitive Combo</td>
+              <td>$2600</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="rates-sub">
+        <p>
+          *If the client has had a cognitive assessment within the last two years, a second is unable to be administered, which will result in a
+          reduction of the cost. This will be discussed at the time of referral.*
+        </p>
+      </div>
+
+      <!-- CTA Section -->
+      <section class="cta-section" id="cta-setion-rates">
+        <div class="cta-content">
+          <img src="/assets/bf-pink-hollow.png" alt="" width="184px" height="184px" />
+          <div class="cta-content__middle">
+            <h1>Reach out!</h1>
+            <img src="/assets/cta-line-green.png" alt="" id="cta-line" />
+            <p>Ready to refer?</p>
+          </div>
+          <img src="/assets/bf-green-hollow.png" alt="" width="184px" height="184px" />
+        </div>
+
+        <div class="cta-button-wrapper">
+          <button class="btn btn-shadow-drop btn-shadow-drop--black cta-btn">
+            <a href="https://meraki-allied-health.splose.com/public-form/e6bd3fec-e156-4c93-8fdf-d81719a7e906" target="_blank"
+              >For Therapy based services</a
+            >
+          </button>
+          <button class="btn btn-shadow-drop btn-shadow-drop--black cta-btn">
+            <a href="https://meraki-allied-health.splose.com/public-form/d270eee8-26d2-46de-bd2d-31d7f8f1baaa" target="_blank"
+              >For Assessment services</a
+            >
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <footer class="footer">
+        <div class="footer-content-left">
+          <a href="index.html"><img src="/assets/logo/logo-circle.webp" alt="Meraki Allied Health logo" width="270px" height="250px" /></a>
+          <div class="copywright-footer">
+            <p><small>&copy; 2025 All Rights Reserved - </small></p>
+            <a href="www.serifdigital.com.au" class="sd-logo" target="_blank"><img src="/assets/sd-logo2.svg" alt="Serif Digital logo" /></a>
+          </div>
+        </div>
+
+        <div class="footer-content-right">
+          <h4>Meraki Allied Health</h4>
+          <p>
+            Supporting children, families, and caregivers across Rockingham, Mandurah, and Eastern suburbs with tailored psychology, play therapy,
+            Positive behaviour support and assessments.
+          </p>
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/people/Meraki-Allied-Health/100093858669531/" target="_blank"
+              ><img src="/assets/icons/fb-icon.svg" alt="Facebook"
+            /></a>
+            <a href="https://www.linkedin.com/company/meraki-allied-health" target="_blank"
+              ><img src="/assets/icons/insta-icon.svg" alt="Instagram"
+            /></a>
+            <a href="https://www.instagram.com/merakialliedhealth/" target="_blank"><img src="/assets/icons/linkedIn-icon.svg" alt="LinkedIn" /></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

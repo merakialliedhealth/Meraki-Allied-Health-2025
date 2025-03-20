@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/assets/shape4colors-small.webp" />
+    <title>Meraki Allied Health</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><img src="/assets/logo/logo-main.webp" alt="Meraki Allied Health Logo" width="212px" height="112px" class="home-li" /></a>
+      <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+        <img src="/assets/icons/bars-solid.svg" alt="Open menu" height="40px" width="40px" />
+      </button>
+
+      <nav id="navbar">
+        <ul>
+          <li>
+            <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+              <img src="/assets/icons/xmark-solid.svg" alt="Close menu" height="40px" width="40px" />
+            </button>
+          </li>
+          <li><a href="/rates.html">Rates</a></li>
+          <li><a href="/team.html">Team</a></li>
+          <li><a href="/faqs.html">FAQs</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/refer.html" class="nav-button">Refer now</a></li>
+        </ul>
+      </nav>
+      <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    </header>
+
+    <div class="accordian-main-wrapper">
+      <div class="container-accordian">
+        <h2>Frequently Asked Questions</h2>
+        <div class="heading-underline-faq">
+          <img src="/assets/brand-line.webp" alt="" />
+        </div>
+
+        <div class="faq-sub-heading">
+          <p>
+            Have questions? Look here or
+            <a href="/contact.html">get in touch.</a>
+          </p>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title">Where are your assessment locations?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Assessments are completed at our Secret Harbour office, or in our High Wycombe space at Meerilinga Children and Community Services.
+              </p>
+              <p>Broome assessments are conducted via telehealth or at the Chamber of Commerce in a private meeting room.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title">Do you need a referral? </span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Short answer, no as we provide private services. However, if you’re seeking a rebate from Medicare or your private health cover, it is
+                best you investigate any requirements prior to self-referring as often these institutions require a specialist referral in order to
+                access any rebates.
+              </p>
+
+              <p>
+                We do recommend referrals are only made after consultation with your doctor or another health professional to assist in identifying
+                traits suggestive of a diagnosis. This enables them to complete pre-screening to rule out other potential concerns and ensures that
+                this service is appropriate to your needs.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title">How is payment managed? </span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                All payments are to be made by direct deposit. A 30% deposit is required to secure your appointment booking. If the deposit is not
+                received within 7 days of the booking being made and we haven't heard from you, the appointment may be given to someone else. We ask
+                that the remainder of the fee is paid within 2 weeks of your final assessment appointment and prior to release of the Diagnostic
+                Report.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false">
+              <span class="accordion-title">When will you get the report? </span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                We aim to have the report finalised and released to clients within 8 weeks. Delays in responses from third party participants (e.g.
+                teachers, other caregivers) may impact this timeframe. The full fee is required to have been paid prior to report release.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false">
+              <span class="accordion-title">When is the feedback session?</span>
+              <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Feedback sessions are completed via Telehealth (phone or videoconference) following the release of the report. This appointment is set
+                at a time that suits you and the diagnosing clinician. These appointments are 30 minutes long.
+              </p>
+              <p>You will be invited to choose this option when the report is released.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="faq-see-below">
+      <p>For comprehensive information, <span>see below.</span></p>
+    </div>
+
+    <!-- Nav bar for jump smooth scrolling -->
+
+    <section id="top">
+      <ul class="assess-nav">
+        <li id="jump-hint">Click to jump to section!</li>
+        <li><a href="#autism">Autism Assessments</a></li>
+        <li><a href="#adhd">ADHD Assessments</a></li>
+        <li><a href="#cognitive">Cognitive Assessments</a></li>
+        <li><a href="#autism-adhd">Autism and ADHD Combined Assessment</a></li>
+        <li><a href="#autism-cognitive">Autism and Cognitive Combined Assessment</a></li>
+      </ul>
+    </section>
+
+    <!-- Autism Assessments -->
+
+    <section id="autism" class="faqs-assessment-wrapper">
+      <h3>Autism Assessments</h3>
+      <p>
+        Autism assessments are available for children and adults. We recommend referrals are only made after consultation with your doctor or another
+        health professional to assist in identifying traits suggestive of an Autism diagnosis.
+      </p>
+
+      <p>
+        For child clients, a parent/caregiver interview is first conducted, followed by an individual assessment. While the child is with the
+        psychologist/assessor, the parent/caregiver will be asked to complete additional assessment tools online if not completed prior.
+      </p>
+
+      <p>The cost of $2300 includes:</p>
+      <ul>
+        <li>Autism assessment (ADOS)</li>
+        <li>Clinical interview in line with the ADI-R</li>
+        <li>Assessment of function</li>
+        <li>A comprehensive diagnostic report</li>
+        <li>Additional questionnaires tailored to the client as needed</li>
+        <li>A letter with statement of diagnosis</li>
+        <li>Feedback session (optional)</li>
+      </ul>
+
+      <p>
+        Our assessments are completed by Psychologists. NDIS require a consensus team diagnosis for children over 9 and adults to access the scheme.
+        This means an additional health professional will need to ratify the diagnosis (e.g. a Paediatrician, Speech Pathologist, Psychiatrist).
+        Children accessing NDIS under the Early Childhood Early Intervention (ECEI: under 9 years old) pathway do not require a formal diagnosis for
+        initial access, however need to work towards obtaining one in order to stay on the scheme long-term.
+      </p>
+
+      <p>
+        The Department of Education have different requirements to the NDIS. Sign off from a ‘Lead Practitioner’ such as a Paediatrician or
+        Psychiatrist is required.
+      </p>
+
+      <p>
+        <em>
+          *We follow the Autism CRC and meet criteria for participating in diagnosis as part of a consensus team. Whilst we do our best to stay up to
+          date with the various institutional requirements, we encourage all clients to ensure that our assessments will meet their needs by checking
+          with the relevant institutions (NDIS/Dept. of Ed) and clearly communicating their goals for accessing assessment with us so we can ensure we
+          are the right fit*
+        </em>
+      </p>
+    </section>
+
+    <!-- ADHD Assessments -->
+
+    <section id="adhd" class="faqs-assessment-wrapper">
+      <h3>ADHD Assessments</h3>
+      <p>
+        ADHD assessments are available for children aged 6+ and adults. We recommend referrals are only made after consultation with your doctor or
+        another health professional to assist in identifying traits suggestive of an ADHD diagnosis.
+      </p>
+
+      <p>
+        For children, a parent interview is conducted followed by an observation of the child in our office space and a cognitive assessment. On some
+        occasions, it may be appropriate for the child to participate in the interview. Questionnaires will be sent to the clients parent/caregiver
+        and teacher where applicable. School reports and supporting documentation will also be requested.
+      </p>
+
+      <p>
+        Adult and/or Teen assessments are completed in one appointment in our office, consisting of the interview and cognitive assessment.
+        Questionnaires will also be sent to the client and a secondary person known to them.
+      </p>
+
+      <p>The cost of $1600 includes:</p>
+      <ul>
+        <li>Clinical interview</li>
+        <li>ADHD assessment</li>
+        <li>Assessment of function</li>
+        <li>Cognitive Assessment</li>
+        <li>Observation(s) where relevant</li>
+        <li>Comprehensive diagnostic report</li>
+        <li>Additional questionnaires tailored to the client as needed</li>
+        <li>A letter with statement of diagnosis</li>
+        <li>Feedback session (optional)</li>
+      </ul>
+
+      <p>
+        <em>
+          Please be aware that psychologists cannot prescribe or make recommendations about medication. Medication is prescribed by Paediatrician’s
+          and Psychiatrists. If you’re seeking pharmaceutical intervention, please consult with a Paediatrician or Psychiatrist for this.
+        </em>
+      </p>
+    </section>
+
+    <!-- Cognitive Assessments -->
+    <section id="cognitive" class="faqs-assessment-wrapper">
+      <h3>Cognitive Assessments</h3>
+      <p>
+        Cognitive assessments are available for children 6+ and adults. We recommend referrals are only made after consultation with your school,
+        doctor or another health professional to assist in identifying the need for a cognitive assessment.
+      </p>
+
+      <p>
+        For children, a parent interview is conducted followed by an observation of the child in our office space and a cognitive assessment. On some
+        occasions, it may be appropriate for the child to participate in the interview. Questionnaires will be sent to the clients parent/caregiver
+        and teacher where applicable. School reports and supporting documentation will also be requested.
+      </p>
+
+      <p>
+        Adult and/or Teen assessments are completed in one appointment in our office, consisting of the interview and cognitive assessment.
+        Questionnaires will also be sent to the client and a secondary person known to them.
+      </p>
+
+      <p>The cost of $1100 includes:</p>
+      <ul>
+        <li>Wechsler Intelligence Scale for Children (WISC) OR</li>
+        <li>Wechsler Adult Intelligence Scale for Adults (WAIS)</li>
+        <li>Clinical interview</li>
+        <li>Assessment of function</li>
+        <li>A comprehensive diagnostic report</li>
+        <li>Additional questionnaires tailored to the client as needed</li>
+        <li>A letter with statement of diagnosis</li>
+        <li>Feedback session (optional)</li>
+      </ul>
+    </section>
+
+    <!-- Autism and ADHD Combined  -->
+    <section id="autism-adhd" class="faqs-assessment-wrapper">
+      <h3>Autism and ADHD Combined Assessment</h3>
+      <p>
+        In cases where both Autism and ADHD are suggested, we can conduct both assessments concurrently across at least two appointments. This will
+        save time and funds for families/participants.
+      </p>
+
+      <p>The cost of $2850 includes:</p>
+      <ul>
+        <li>Autism assessment (ADOS)</li>
+        <li>Clinical interview in line with the ADI-R</li>
+        <li>Cognitive Assessment</li>
+        <li>Assessment of function</li>
+        <li>ADHD assessment</li>
+        <li>Comprehensive combined diagnostic report</li>
+        <li>Additional questionnaires tailored to the client as needed</li>
+        <li>A letter with statement of diagnosis</li>
+        <li>Feedback session (optional)</li>
+      </ul>
+    </section>
+
+    <!-- Autism and Cognitive Combined -->
+    <section id="autism-cognitive" class="faqs-assessment-wrapper">
+      <h3>Autism and Cognitive Combined Assessment</h3>
+      <p>
+        In cases where both Autism and Intellectual Disability are suspected, we can conduct both assessments concurrently across at least two
+        appointments. This will save time and funds for families/participants.
+      </p>
+
+      <p>The cost of $2600 includes:</p>
+      <ul>
+        <li>Autism assessment (ADOS)</li>
+        <li>Clinical interview</li>
+        <li>Cognitive Assessment</li>
+        <li>Assessment of function</li>
+        <li>Comprehensive combined diagnostic report</li>
+        <li>A letter with statement of diagnosis</li>
+        <li>Feedback session (optional)</li>
+      </ul>
+    </section>
+
+    <a class="back-to-top" href="#top">Back to top <img src="/assets/icons/arrow-up-solid.svg" alt="" width="20px" height="20px" /></a>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-content-left">
+        <a href="index.html"><img src="/assets/logo/logo-circle.webp" alt="Meraki Allied Health logo" width="270px" height="250px" /></a>
+        <div class="copywright-footer">
+          <p><small>&copy; 2025 All Rights Reserved - </small></p>
+          <a href="www.serifdigital.com.au" class="sd-logo"><img src="/assets/sd-logo2.svg" alt="Serif Digital logo" /></a>
+        </div>
+      </div>
+
+      <div class="footer-content-right">
+        <h4>Meraki Allied Health</h4>
+        <p>
+          Supporting children, families, and caregivers across Rockingham, Mandurah, and Eastern suburbs with tailored psychology, play therapy,
+          Positive behaviour support and assessments.
+        </p>
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/people/Meraki-Allied-Health/100093858669531/" target="_blank"
+            ><img src="/assets/icons/fb-icon.svg" alt="Facebook"
+          /></a>
+          <a href="https://www.linkedin.com/company/meraki-allied-health" target="_blank"
+            ><img src="/assets/icons/insta-icon.svg" alt="Instagram"
+          /></a>
+          <a href="https://www.instagram.com/merakialliedhealth/" target="_blank"><img src="/assets/icons/linkedIn-icon.svg" alt="LinkedIn" /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

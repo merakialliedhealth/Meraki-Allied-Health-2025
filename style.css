@@ -23,22 +23,22 @@
   /* Text-size styles */
 
   /* headings */
-  --fs-h1-desktop: 74px;
-  --fs-h2-desktop: 64px;
-  --fs-h3-desktop: 48px;
-  --fs-h4-desktop: 36px;
-  --fs-h1-mobile: 70px;
-  --fs-h2-mobile: 48px;
-  --fs-h3-mobile: 36px;
-  --fs-h4-mobile: 20px;
+  --fs-h1-desktop: 4.625rem;
+  --fs-h2-desktop: 4rem;
+  --fs-h3-desktop: 3rem;
+  --fs-h4-desktop: 2.25rem;
+  --fs-h1-mobile: 4.375rem;
+  --fs-h2-mobile: 3rem;
+  --fs-h3-mobile: 2.25rem;
+  --fs-h4-mobile: 1.25rem;
 
-  --fs-XL-desktop: 124px;
+  --fs-XL-desktop: 7.75rem;
 
   /* Body text */
-  --fs-body-desktop: 18px;
-  --fs-sub-text-desktop: 16px;
-  --fs-body-mobile: 18px;
-  --fs-sub-text-mobile: 12px;
+  --fs-body-desktop: 1.125rem;
+  --fs-sub-text-desktop: 1rem;
+  --fs-body-mobile: 1.125rem;
+  --fs-sub-text-mobile: 0.75rem;
 
   /* font family */
   --ff-heading: "Amatic SC", sans-serif;
@@ -723,7 +723,7 @@ nav a:hover {
     padding: 0 20px 0 20px;
   }
   .our-services-grid-wrapper li {
-    font-size: 16px;
+    font-size: 1rem;
     padding: 0;
     line-height: 30px;
   }
@@ -768,7 +768,7 @@ nav a:hover {
 
 .cta-content p {
   margin-top: 30px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1112,7 +1112,7 @@ nav a:hover {
 }
 
 .table-container span {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
 }
 
@@ -1124,13 +1124,13 @@ nav a:hover {
 }
 
 .table-title h3 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
   letter-spacing: 1.3px;
 }
 
 .table-title span {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .table-container {
@@ -1173,7 +1173,7 @@ td:first-child {
 .rates-sub p {
   max-width: 750px;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   text-align: center;
 }
@@ -1185,7 +1185,7 @@ td:first-child {
     margin: 0 auto 80px auto;
   }
   .table-container th {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .table-container td {
@@ -1626,7 +1626,7 @@ td:first-child {
 
 .refer-cta-content p {
   margin-top: 30px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {

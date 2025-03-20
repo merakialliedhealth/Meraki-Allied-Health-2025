@@ -692,6 +692,11 @@ nav a:hover {
   margin-bottom: 32px;
 }
 
+.assess-link {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 480px) {
   .assess {
     flex-direction: column;

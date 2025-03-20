@@ -1441,6 +1441,10 @@ td:first-child {
     margin: 40px 0 80px 0;
   }
 
+  .faq-span {
+    font-size: var(--fs-h2-mobile);
+  }
+
   .faqs-assessment-wrapper {
     padding: 0 1.5rem;
   }
